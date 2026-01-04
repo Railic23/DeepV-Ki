@@ -112,6 +112,8 @@ DeepV-Ki supports flexible environment variable configuration. Main configuratio
 | `GITLAB_SCOPES` | Required Scopes (Check these in GitLab) | `api`, `read_user`, `openid`, `profile`, `email` |
 | `PORT` | Backend Service Port | `8001` |
 
+> 🔗 **Detailed Guide**: Having issues? Check the [GitLab OAuth Configuration Guide](docs/GITLAB_OAUTH_SETUP.md).
+
 For more configurations, please refer to the `.env.example` file.
 
 ## 🏗️ Architecture

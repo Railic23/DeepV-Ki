@@ -112,6 +112,8 @@ DeepV-Ki 支持灵活的环境变量配置，主要配置项如下：
 | `GITLAB_SCOPES` | 必须勾选的权限 (Scopes) | `api`, `read_user`, `openid`, `profile`, `email` |
 | `PORT` | 后端服务端口 | `8001` |
 
+> 🔗 **详细指南**：遇到配置问题？请查看 [GitLab OAuth 配置指南](docs/GITLAB_OAUTH_SETUP.md)。
+
 更多配置请参考 `.env.example` 文件。
 
 ## 🏗️ 系统架构 (Architecture)
