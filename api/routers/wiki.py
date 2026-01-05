@@ -13,6 +13,7 @@ from api.exceptions import InvalidRepositoryError, WikiGenerationError, TaskNotF
 from api.markdown_utils import clean_markdown_code_fence, fix_markdown_code_fence_spacing
 from api.security_utils import validate_session, check_repo_access, parse_repo_info
 from api.auth_dependencies import get_current_session_id
+from api.user_manager import user_manager
 
 logger = logging.getLogger(__name__)
 
@@ -29,6 +30,8 @@ def get_wiki_service() -> WikiService:
         _wiki_service = WikiService()
     return _wiki_service
 
+
+from api.user_manager import user_manager
 
 @router.post("/tasks/wiki/generate")
 async def create_wiki_generation_task(
@@ -63,6 +66,13 @@ async def create_wiki_generation_task(
 
         # 检查仓库访问权限
         check_repo_access(user_email, owner, repo, "/api/tasks/wiki/generate")
+
+        # 🔐 自动从 Session 注入 OAuth Token (如果前端未提供)
+        if not request.access_token and session_id:
+            session = user_manager.get_session(session_id)
+            if session and session.access_token:
+                logger.info(f"🔐 Injecting OAuth access token from session for user {user_email}")
+                request.access_token = session.access_token
 
         logger.info(f"📝 收到 Wiki 生成请求: owner='{owner}', repo='{repo}', url='{request.repo_url}' (user: {user_email})")
         wiki_service = get_wiki_service()
