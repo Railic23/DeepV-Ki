@@ -106,10 +106,11 @@ DeepV-Ki supports flexible environment variable configuration. Main configuratio
 | :--- | :--- | :--- |
 | `OPENAI_API_KEY` | OpenAI API Key | `sk-...` |
 | `GOOGLE_API_KEY` | Google Gemini API Key | `AIza...` |
+| `DASHSCOPE_API_KEY` | Aliyun DashScope API Key | `sk-...` |
 | `GITLAB_URL` | GitLab Instance URL | `https://gitlab.com` |
 | `GITLAB_CLIENT_ID` | GitLab OAuth App ID | `...` |
 | `GITLAB_REDIRECT_URI` | OAuth Callback URL (Must match GitLab App config) | `http://localhost:8001/api/auth/gitlab/callback` |
-| `GITLAB_SCOPES` | Required Scopes (Check these in GitLab) | `api`, `read_user`, `openid`, `profile`, `email` |
+| `GITLAB_SCOPES` | Required Scopes (Check these in GitLab) | `api`, `read_user` |
 | `PORT` | Backend Service Port | `8001` |
 
 > 🔗 **Detailed Guide**: Having issues? Check the [GitLab OAuth Configuration Guide](docs/GITLAB_OAUTH_SETUP.md).

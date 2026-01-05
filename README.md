@@ -106,10 +106,11 @@ DeepV-Ki 支持灵活的环境变量配置，主要配置项如下：
 | :--- | :--- | :--- |
 | `OPENAI_API_KEY` | OpenAI API 密钥 | `sk-...` |
 | `GOOGLE_API_KEY` | Google Gemini API 密钥 | `AIza...` |
+| `DASHSCOPE_API_KEY` | Aliyun DashScope API 密钥 | `sk-...` |
 | `GITLAB_URL` | GitLab 实例地址 | `https://gitlab.com` |
 | `GITLAB_CLIENT_ID` | GitLab OAuth App ID | `...` |
 | `GITLAB_REDIRECT_URI` | OAuth 回调地址 (必须与 GitLab App 配置一致) | `http://localhost:8001/api/auth/gitlab/callback` |
-| `GITLAB_SCOPES` | 必须勾选的权限 (Scopes) | `api`, `read_user`, `openid`, `profile`, `email` |
+| `GITLAB_SCOPES` | 必须勾选的权限 (Scopes) | `api`, `read_user` |
 | `PORT` | 后端服务端口 | `8001` |
 
 > 🔗 **详细指南**：遇到配置问题？请查看 [GitLab OAuth 配置指南](docs/GITLAB_OAUTH_SETUP.md)。

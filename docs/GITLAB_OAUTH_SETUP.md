@@ -42,9 +42,6 @@ You must check the boxes for the following scopes. If any are missing, the login
 
 *   ✅ **api** (Grants complete read/write access to the API, required for reading code repositories)
 *   ✅ **read_user** (Grants read-only access to the authenticated user's profile)
-*   ✅ **openid** (Authenticate using OpenID Connect)
-*   ✅ **profile** (Allows read-only access to the user's personal information using OpenID Connect)
-*   ✅ **email** (Allows read-only access to the user's primary email address using OpenID Connect)
 
 > **Why `api` scope?**
 > DeepV-Ki needs to read repository structures, file content, and branches to generate Wikis. The `read_repository` scope is sometimes insufficient for certain API endpoints, so `api` is recommended for full compatibility.
